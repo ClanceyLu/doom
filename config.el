@@ -79,3 +79,6 @@
 
 ;; 窗口最大化
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
+
+;; 翻页留白
+(setq scroll-margin 6)
