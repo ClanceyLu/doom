@@ -82,3 +82,8 @@
 
 ;; 翻页留白
 (setq scroll-margin 6)
+
+;; golang
+(add-hook! go-mode
+  (setq gofmt-command "goimports")
+  (add-hook 'before-save-hook 'gofmt-before-save))
